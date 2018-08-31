@@ -1,0 +1,31 @@
+{
+  "name": "webpack-curso",
+  "version": "1.0.0",
+  "description": "curso de webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack index.js --output bundle.js --mode development",
+    "build:local": "webpack",
+    "build:external": "webpack --config ./external/webpack.config.js",
+    "build:css": "webpack --config ./css-style-loader/webpack.config.js",
+    "build:extract:css": "webpack --config ./plugin-extract-text/webpack.config.js",
+    "build:multi": "webpack --config ./multiples-entry-points/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brianbentancourt/webpack.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Brian Bentancourt",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
