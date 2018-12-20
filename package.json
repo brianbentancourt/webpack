@@ -1,0 +1,41 @@
+{
+  "name": "webpack-curso",
+  "version": "1.0.0",
+  "description": "curso de webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack index.js --output bundle.js --mode development",
+    "build:local": "webpack",
+    "build:external": "webpack --config ./external/webpack.config.js",
+    "build:css": "webpack --config ./css-style-loader/webpack.config.js",
+    "build:extract:css": "webpack --config ./plugin-extract-text/webpack.config.js",
+    "build:multi": "webpack --config ./multiples-entry-points/webpack.config.js",
+    "build:dev": "webpack-dev-server --config ./webpack-dev-server/webpack.config.js",
+    "build:babel": "webpack --config ./babel-loader/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brianbentancourt/webpack.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Brian Bentancourt",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.2.0"
+  }
+}
