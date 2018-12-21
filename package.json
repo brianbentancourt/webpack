@@ -19,7 +19,8 @@
     "build:react": "webpack --config ./babel-react/webpack.config.js",
     "build:sass": "webpack --config ./sass-loader/webpack.config.js",
     "build:stylus": "webpack --config ./stylus-loader/webpack.config.js",
-    "build:less": "webpack --config ./less-loader/webpack.config.js"
+    "build:less": "webpack --config ./less-loader/webpack.config.js",
+    "build:postcss": "webpack --config ./postcss-loader/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.4.3",
     "babel-loader": "^8.0.4",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
@@ -43,6 +45,10 @@
     "less-loader": "^4.1.0",
     "nib": "^1.1.2",
     "node-sass": "^4.11.0",
+    "postcss": "^7.0.7",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
     "rupture": "^0.7.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
