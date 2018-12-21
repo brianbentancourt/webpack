@@ -16,7 +16,8 @@
     "build:image": "webpack --config ./url-loader-images/webpack.config.js",
     "build:fonts": "webpack --config ./url-loader-fonts/webpack.config.js",
     "build:video": "webpack --config ./file-loader-video/webpack.config.js",
-    "build:react": "webpack --config ./babel-react/webpack.config.js"
+    "build:react": "webpack --config ./babel-react/webpack.config.js",
+    "build:sass": "webpack --config ./sass-loader/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,8 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.28.1",
